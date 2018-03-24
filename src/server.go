@@ -12,7 +12,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	port := os.Args[1]
+	port := 8002
 	fmt.Println(port)
 
 	http.HandleFunc("/", handler)
